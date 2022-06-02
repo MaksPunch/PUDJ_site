@@ -28,7 +28,7 @@ div {
 }
 
 .body_container {
-	height: 950px;
+	height: 100%;
 	background: url('img/rectangle 1.png');
 }
 
@@ -73,10 +73,11 @@ header h1 {
 
 .regular_container, .in_progress_container, .problems_container, .done_container {
 	width: 20%;
-	height: 100p;
+	height: 100%;
 	background: rgba(249, 249, 249, 0.5);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
+	margin-bottom: 20px;
 }
 
 .task_container_header {
@@ -92,7 +93,13 @@ header h1 {
 } 
 
 .tasks_header {
+	position: absolute;
 	margin: 0 auto;
+}
+
+.more_btn_d {
+	margin-right: 5px;
+	margin-left: auto;
 }
 
 .more_btn {
@@ -101,7 +108,6 @@ header h1 {
 	font-family: 'Inter', sans-serif;
 	background: 0;
 	border: 0;
-	margin-right: 5px;
 }
 
 .circle {
