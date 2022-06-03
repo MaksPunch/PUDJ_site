@@ -32,6 +32,8 @@ div, button, p {
 
 button {
 	cursor: pointer;
+	border: 0;
+	background: 0;
 }
 
 p {
@@ -334,9 +336,11 @@ header h1 {
 }
 
 .add_dates_container {
+	position: absolute;	
+	left: 37%;
 	width: 488px;
 	height: 415px;
-	background: rgba(233, 233, 233, 0.35);
+	background: rgba(233, 233, 233, 1);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 }
@@ -357,15 +361,104 @@ header h1 {
 	margin: 0 auto;
 }
 
-.add_dates_header img {
+.add_dates_header button {
 	margin-left: auto;
 	margin-right: 13px;
 }
 
-.month {
+.dates_container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.month, .year {
 	font-size: 26px;
 }
 
-.month img {
+.month {
+	margin-left: 17px;
+}
+
+.year {
+	margin-right: 17px;
+}
+
+.dates_container img {
 	transform: rotate(180deg);
+}
+
+.number_container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 17px;
+	margin-right: 17px;
+	margin-top: 10px;
+}
+
+.date {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: #D9D9D9;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.date_row_1, .date_row_2, .date_row_3 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 11px;
+}
+
+.marked {
+	border: 1px solid #FF0707;
+}
+
+.save_date_btn {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 335px;
+	height: 53px;
+	font-size: 26px;
+	background: #AAFFBD;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	cursor: pointer;
+	margin: 0 auto;
+	margin-top: 29px;
+}
+
+.attachments_window_container {
+	background: rgba(233, 233, 233, 1);
+	border-radius: 20px;
+	position: absolute;
+	width: 488px;
+	height: 760px;
+}
+
+.attachments_content {
+	display: flex;
+	flex-direction: column;
+	margin: 45px;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+.img:first-child {
+	margin-right: 34px;
+}
+
+.img {
+	cursor: pointer;
 }
