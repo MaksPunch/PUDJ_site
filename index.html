@@ -347,7 +347,7 @@
                             <img src="img/17.png" alt="">
                             <p>Даты</p>
                         </div>
-                        <div class="attachments task_options">
+                        <div class="attachments task_options" onclick='addAttach()'>
                             <img src="img/18.png" alt="">
                             <p>Вложения</p>
                         </div>
@@ -424,12 +424,12 @@
                 Сохранить дату
             </div>
         </div>
-        <div class="attachments_window_container">
+        <div class="attachments_window_container hidden">
             <div class="add_dates_header">
                 <div class="add_dates_header_text">
                     Вложения
                 </div>
-                <button onclick="closeDates()"><img src="img/22.png" alt=""></button>
+                <button onclick="closeAttach()"><img src="img/22.png" alt=""></button>
             </div>
             <div class="attachments_content">
                 <div class="row">
@@ -493,6 +493,15 @@
 
         function closeDates() {
             document.querySelector('.add_dates_container').classList.add('hidden');
+        }
+
+        function addAttach() {
+            let attach = document.querySelector('.attachments_window_container');
+            attach.classList.remove('hidden');
+        }
+
+        function closeAttach() {
+            document.querySelector('.attachments_window_container').classList.add('hidden');
         }
     </script>
 </body>

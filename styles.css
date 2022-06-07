@@ -439,6 +439,7 @@ header h1 {
 	background: rgba(233, 233, 233, 1);
 	border-radius: 20px;
 	position: absolute;
+	left: 38%;
 	width: 488px;
 	height: 760px;
 }
