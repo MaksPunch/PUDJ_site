@@ -653,9 +653,7 @@
         let dates = document.querySelectorAll('.date');
         for(let i = 0; i < dates.length; i++) {
             dates[i].onclick = function() { 
-                console.log('added')
                 document.querySelector('.marked').classList.remove('marked');
-                console.log(dates[i])
                 dates[i].classList.add('marked');
             }
         }
