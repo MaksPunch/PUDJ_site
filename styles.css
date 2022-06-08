@@ -164,6 +164,7 @@ header h1 {
     justify-content: space-between;
 	height: 100px;
 	padding-left: 10px;
+	padding-right: 10px;
 	padding-top: 5px;
 	border-top: 1px solid #000;
 	background: rgba(217, 217, 217, 1);
@@ -171,10 +172,31 @@ header h1 {
 	color: rgba(0,0,0, 0.6);
 }
 
+.task_description_container textarea {
+	overflow: hidden;
+	resize: none;
+	background: 0;
+	border: 0;
+	outline: 0;
+	width: 100%;
+	font-family: 'Inter', sans-serif;
+	padding-bottom: 44px;
+	font-size: 16px !important;
+}
+
+.task_description_container textarea::placeholder {
+	opacity: 1 !important;
+	color: rgba(0,0,0, 0.6) !important;
+	font-size: 16px !important;
+	padding-bottom: 10px;
+	line-height: 1;
+}
+
 .more_btn_desc {
 	width: 36px;
 	margin-top: auto;
 	margin-left: auto;
+	cursor: pointer;
 }
 
 .more_btn_desc button {
@@ -208,7 +230,7 @@ header h1 {
 	background: #96FF8D;
 }
 
-.add_task_container {
+.open_task_container, .add_task_container {
 	position: absolute;
 	top: 20%;
 	left: 20%;
@@ -256,7 +278,7 @@ header h1 {
 }
 
 .add_task_members {
-	align-self: bottom;
+	margin-top: 40%;
 }
 
 .members_avt {
@@ -265,6 +287,10 @@ header h1 {
 
 .members_avt img {
 	margin-right: 17px;
+}
+
+.members_avt img:last-child {
+	cursor: pointer;
 }
 
 .add_task_rest_cont {
@@ -279,6 +305,28 @@ header h1 {
 	background: rgba(214, 214, 214, 0.7);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
+}
+
+.add_task_desc textarea {
+	overflow: hidden;
+	resize: none;
+	background: 0;
+	border: 0;
+	outline: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px !important;
+}
+
+.add_task_desc textarea::placeholder {
+	opacity: 1 !important;
+	color: rgba(0,0,0, 0.6) !important;
+	font-size: 20px !important;
+	padding-bottom: 10px;
+	line-height: 1;
 }
 
 .add_task_desc p {
@@ -337,7 +385,7 @@ header h1 {
 
 .add_dates_container {
 	position: absolute;	
-	left: 37%;
+	left: 38%;
 	width: 488px;
 	height: 415px;
 	background: rgba(233, 233, 233, 1);
@@ -407,6 +455,7 @@ header h1 {
 	border-radius: 50%;
 	background: #D9D9D9;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
 
 }
 
@@ -462,4 +511,98 @@ header h1 {
 
 .img {
 	cursor: pointer;
+}
+
+.tags_container {
+	background: rgba(233, 233, 233, 1);
+	border-radius: 20px;
+	position: absolute;
+	left: 38%;
+	width: 488px;
+	height: 418px;
+}
+
+.tags_content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tag_name input{
+	width: 389px;
+	height: 50px;
+	margin-top: 46px;
+	background: #D9D9D9;
+	font-size: 26px;
+	font-family: 'Inter', sans-serif;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	border: 0;
+	outline: none;
+	text-align: center;
+}
+
+input::placeholder {
+	font-size: 26px;
+	opacity: 0.6;
+}
+
+.tag_color {
+	display: flex;
+	align-items: flex-end;
+	margin-top: 56px;
+}
+
+.tag_color input{
+	width: 203px;
+	height: 40px;
+	background: #D9D9D9;
+	font-size: 26px;
+	font-family: 'Inter', sans-serif;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	border: 0;
+	outline: none;
+	text-align: center;
+}
+
+.color_block {	
+	width: 29px;
+	height: 29px;
+	background: #D9D9D9;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-left: 15px;
+}
+
+.color_code {
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+.save_tag {
+	margin-top: 52px;
+}
+
+.members_container {
+	background: rgba(233, 233, 233, 1);
+	border-radius: 20px;
+	position: absolute;
+	left: 38%;
+	width: 488px;
+	height: 845px;
+}
+
+.member {
+	margin-top: 36px;
+	display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.member:first-child {
+	margin-top: 63px;
+}
+
+.member img:last-child {
+	margin-left: auto;
 }

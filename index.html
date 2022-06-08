@@ -48,9 +48,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -67,9 +68,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -86,9 +88,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -118,9 +121,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -137,9 +141,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -156,9 +161,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -188,9 +194,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -207,9 +214,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -226,9 +234,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -258,9 +267,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -277,9 +287,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -296,9 +307,10 @@
                                 </div>
                             </div>
                             <div class="task_description_container">
-                                <div>Какое-то описание</div>
+                                <textarea name="text" placeholder="Какое-то описание"
+                                rows='2' cols='4' readonly></textarea>
                                 <div class="more_btn_desc">
-                                    <button>...</button>
+                                    <button onclick="openTask()">...</button>
                                 </div>
                             </div>
                         </div>
@@ -309,6 +321,63 @@
                 </div>
             </div>
         </main>
+    </div>
+    <div class="open_task_container hidden">
+                <div class="add_task_btns">
+                    <button class="add_task_more">
+                        <img src="img/21.png" alt="">
+                    </button>
+                    <button class="close" onclick="closeOpenTask()">
+                        <img src="img/22.png" alt="">
+                    </button>
+                </div>
+                <div class="add_task_top">
+                    <div class="add_task_header">
+                        <h2>Название задачи</h2>
+                        <div class="add_task_members">
+                            <p>Участники:</p>
+                            <div class="members_avt">
+                                <img src="img/13.png" alt="">
+                                <img src="img/14.png" alt="">
+                                <img src="img/15.png" alt="">
+                                <img src='img/16.png' alt="" onclick='addMember()'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_task_attach">
+                            <p>Вложения</p>
+                            <img src="img/pudj.png" alt="">
+                    </div>
+                </div>
+                <div class="add_task_rest_cont">
+                    <div class="add_task_desc">
+                        <textarea name="text" placeholder="Какое-то описание"
+                        rows='2' cols='4'></textarea>
+                    </div>
+                    <div class="add_task_options">
+                        <p>Действия: </p>
+                        <div class="dates task_options" onclick="addDates()">
+                            <img src="img/17.png" alt="">
+                            <p>Даты</p>
+                        </div>
+                        <div class="attachments task_options" onclick='addAttach()'>
+                            <img src="img/18.png" alt="">
+                            <p>Вложения</p>
+                        </div>
+                        <div class="tags task_options" onclick='addTag()'>
+                            <img src="img/19.png" alt="">
+                            <p>Метки</p>
+                        </div>
+                        <div class="members task_options" onclick='addMember()'>
+                            <img src="img/20.png" alt="">
+                            <p>Участники</p>
+                        </div>
+                        <div class="options_btns">
+                            <button class="delete">Удалить</button>
+                            <button class="edit">Изменить</button>
+                        </div>
+                    </div>
+                </div>
     </div>
     <div class="add_task_container hidden">
                 <div class="add_task_btns">
@@ -325,17 +394,10 @@
                         <div class="add_task_members">
                             <p>Участники:</p>
                             <div class="members_avt">
-                                <img src="img/13.png" alt="">
-                                <img src="img/14.png" alt="">
-                                <img src="img/15.png" alt="">
-                                <img src='img/16.png' alt="">
+                                <img src='img/16.png' alt="" onclick='addMember()'>
                             </div>
                         </div>
-                    </div>
-                    <div class="add_task_attach">
-                            <p>Вложения</p>
-                            <img src="img/pudj.png" alt="">
-                    </div>
+                    </div>  
                 </div>
                 <div class="add_task_rest_cont">
                     <div class="add_task_desc">
@@ -351,11 +413,11 @@
                             <img src="img/18.png" alt="">
                             <p>Вложения</p>
                         </div>
-                        <div class="tags task_options">
+                        <div class="tags task_options" onclick='addTag()'>
                             <img src="img/19.png" alt="">
                             <p>Метки</p>
                         </div>
-                        <div class="members task_options">
+                        <div class="members task_options" onclick='addMember()'>
                             <img src="img/20.png" alt="">
                             <p>Участники</p>
                         </div>
@@ -466,6 +528,55 @@
                 </div>
             </div>                                                      
     </div>
+    <div class="tags_container hidden">
+            <div class="add_dates_header">
+                <div class="add_dates_header_text">
+                    Метки
+                </div>
+                <button onclick="closeTags()"><img src="img/22.png" alt=""></button>
+            </div>
+            <div class="tags_content">
+                <div class="tag_name">
+                    <input type="text" placeholder="Текст метки">
+                </div>
+                <div class="tag_color">
+                    <input type="text" placeholder="Цвет метки">
+                    <div class="color_block"></div>
+                    <div class="color_code">#D9D9D9</div>
+                </div>
+                <div class="save_tag save_date_btn">Сохранить метку</div>
+            </div>   
+    </div>
+    <div class="members_container hidden">
+            <div class="add_dates_header">
+                <div class="add_dates_header_text">
+                    Участники
+                </div>
+                <button onclick="closeMembers()"><img src="img/22.png" alt=""></button>
+            </div>
+            <div class="members_content">
+                <div class="member">
+                    <img src="img/31.png" alt="">
+                    <p>Эдгар</p>
+                    <img src="img/35.png" alt="">
+                </div>
+                <div class="member">
+                    <img src="img/32.png" alt="">
+                    <p>Шелли</p>
+                    <img src="img/35.png" alt="">
+                </div>
+                <div class="member">
+                    <img src="img/33.png" alt="">
+                    <p>Спайк</p>
+                    <img src="img/35.png" alt="">
+                </div>
+                <div class="member">
+                    <img src="img/34.png" alt="">
+                    <p>Мортис</p>
+                    <img src="img/35.png" alt="">
+                </div>
+            </div>   
+    </div>
     <script>
         function addTask() {
             let addTask = document.querySelector(".add_task_container");
@@ -477,8 +588,27 @@
             }
         }
 
+        function openTask() {
+            let addTask = document.querySelector(".open_task_container");
+            addTask.classList.remove('hidden');
+            document.querySelector('.body_container').style.opacity = 0.5;
+            let allBtns = document.querySelectorAll(".add_task_btn");
+            for(let i = 0; i < allBtns.length; i++) {
+                allBtns[i].setAttribute('disabled', true);
+            }
+        }
+
         function closeAddTask() {
             let addTask = document.querySelector(".add_task_container");
+            addTask.classList.add('hidden');
+            document.querySelector('.body_container').style.opacity = 1;
+            let allBtns = document.querySelectorAll(".add_task_btn");
+            for(let i = 0; i < allBtns.length; i++) {
+                allBtns[i].removeAttribute('disabled');
+            }
+        }
+        function closeOpenTask() {
+            let addTask = document.querySelector(".open_task_container");
             addTask.classList.add('hidden');
             document.querySelector('.body_container').style.opacity = 1;
             let allBtns = document.querySelectorAll(".add_task_btn");
@@ -502,6 +632,32 @@
 
         function closeAttach() {
             document.querySelector('.attachments_window_container').classList.add('hidden');
+        }
+
+        function addTag() {
+            document.querySelector('.tags_container').classList.remove('hidden');
+        }
+
+        function closeTags() {
+            document.querySelector('.tags_container').classList.add('hidden');
+        }
+
+        function addMember() {
+            document.querySelector('.members_container').classList.remove('hidden');
+        }
+
+        function closeMembers() {
+            document.querySelector('.members_container').classList.add('hidden');
+        }
+
+        let dates = document.querySelectorAll('.date');
+        for(let i = 0; i < dates.length; i++) {
+            dates[i].onclick = function() { 
+                console.log('added')
+                document.querySelector('.marked').classList.remove('marked');
+                console.log(dates[i])
+                dates[i].classList.add('marked');
+            }
         }
     </script>
 </body>
